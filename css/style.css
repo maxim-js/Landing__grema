@@ -1,0 +1,866 @@
+body {
+    background-color: #fafafa;
+}
+
+p {
+    font-family: dewi-semibold;
+    font-size: 18px;
+}
+select {
+    border: 0;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #a1a1a1;
+    cursor: pointer;
+}
+
+input {
+    font-family: dewi-semibold;
+    width: 100%;
+    padding: 10px;
+    font-size: 21px;
+    outline: none;
+border: none;
+}
+
+
+input[type="search"] {
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    max-width: 274px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+   }
+   input[type="submit"] {
+    max-width: 20px; /* Ширина кнопки */
+    height: 20px; /* Высота кнопки */
+    border: none; /* Убираем рамку */
+    background: url(../img/loupe.png) no-repeat 50% 50%; /* Параметры фона */
+   }
+
+
+.my__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.mainbox {
+    position: relative;
+    top: -50px;
+}
+
+/* HEADER TOP */
+
+.header__top {
+    display: flex;
+    display: -webkit-flex;
+    height: 80px;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.header__logo {
+    cursor: pointer;
+}
+.header__menu_item {
+    cursor: pointer;
+    font-family: dewi-bold;
+    padding-right: 35px;
+    font-size: 18px;
+    color: #131313;
+}
+
+
+
+.header__link {
+    font-size: 18px;
+    color: #131313;
+    margin-bottom: 25px;
+    font-family: dewi-bold;
+}
+.navbar {
+    display: none;
+}
+.navbar-nav {
+    padding: 20px 0;
+}
+.nav-item {
+    padding: 10px 0;
+}
+.header__menu_feedback {
+    font-family: dewi-bold;
+    color: #85eb37;
+    font-size: 15px;
+}
+.header__icon {
+    display: none;
+    width: 30px;
+}
+
+
+
+
+.header__menu {
+    margin-left: 14px;
+}
+.header__phone {
+    cursor: pointer;
+    font-family: dewi;
+    font-size: 22px;
+    color: #131313;
+}
+.header__feedback {
+    cursor: pointer;
+    font-family: dewi-bold;
+    color: #85eb37;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.header__basket {
+    cursor: pointer;
+}
+.header__basket_count {
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: -43px;
+    z-index: 10;
+    padding-left: 19px;
+}
+
+/* HEADER BOTTOM */
+
+.header__bottom_wrapper {
+    background-color: #02ec00;
+}
+.header__btn {
+    font-family: dewi-bold;
+    cursor: pointer;
+    width: 230px;
+    height: 62px;
+    background-color: #0d0d0d;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.header__search {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+.loupe {
+    position: relative;
+    right: 33px;
+}
+
+/* CATALOG */
+
+#catalog {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    background-color: #fff;
+}
+
+.catalog {
+    padding: 38px 5px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.catalog__left {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.catalog__right {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.catalog__col_2 {
+    margin: 0 30px;
+}
+.catalog__col_3 {
+    margin-right: 30px;
+}
+.catalog__item {
+    font-family: dewi-semibold;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    height: 70px;
+}
+.catalog__item:hover {
+    color: #67f466;
+}
+.catalog__line {
+    border-bottom: 1px solid #e8e8e8;
+}
+.catalog__line_resp {
+    display: none;
+}
+
+
+/* SLIDER */
+
+#slider {
+    background-color: #131313;
+    align-items: center;
+}
+.slider__wrapper {
+    margin: 0 auto;
+}
+
+.carousel-block {
+    position: absolute;  
+    bottom: 32%;
+    left: 20%; 
+    max-width: 1100px; 
+    z-index: 10; 
+    color: #fff;
+    text-align: center;
+
+}
+
+.slider__title {
+    text-align: start;
+    color: #fff;
+    font-size: 52px;
+    line-height: 50px;
+    font-family: dewi;
+}
+.slider__grema {
+    color:#02ec00
+}
+.slider__more {
+    color: #02ec00;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: dewi-regular;
+    text-align: start;
+    margin-top: 20%;
+}
+.slider__trigger {
+    position: absolute;
+    top: 750px;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.trigger {
+    color: #fff;
+    font-size: 15px;
+    font-family: dewi-regular;
+    margin-right: 20px;
+}
+.trigger_2 {
+    border: 1px solid #3d3d3d;
+    background-color: #3d3d3d;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ADVANTAGES */
+
+#advantages {
+    margin-bottom: 120px;
+    padding: 40px 0;
+    align-items: center;
+    background-image: url(../img/advantages.png);
+}
+
+.advantages {
+
+    align-items: center;
+}
+
+.advantages__item {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.advantages__title {
+    font-family: dewi;
+    font-size: 25px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* POPULAR */
+
+.popular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+}
+.popular__card {
+    cursor: pointer;
+}
+.popular__img {
+    width: 100%;
+    height: auto;
+}
+.popular__title {
+    font-family: dewi;
+    font-size: 32px;
+    position: relative;
+    top: -50%;
+    padding-left: 14%;
+    line-height: 35px;
+}
+
+/* PRICE */
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0 10px;
+}
+.price__img {
+    height: auto;
+    width: 100%;
+}
+
+.price__value {
+    margin: 20px 0;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-end;
+}
+.prie__type {
+    font-family: dewi-semibold;
+}
+.price__value_left {
+    align-items: flex-end;
+}
+
+.from {
+    font-family: dewi-semibold;
+    color: #a0a0a0;
+    font-size: 16px;
+}
+.ruble {
+    font-family: dewi-bold;
+    font-size: 32px;
+    color: #e58920;
+    position: relative;
+    top: 6.5px;
+    margin-left: 7px;
+}
+.penny {
+    font-family: dewi-semibold;
+    font-size: 22px;
+    color: #e58920;
+    position: relative;
+    top: 5px;
+}
+.currency {
+    font-family: dewi-semibold;
+    font-size: 22px;
+    color: #e58920;
+    margin-right: 23px;
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
+}
+.old {
+    font-size: 16.7px;
+    font-family: dewi-regular;
+    text-decoration: line-through;
+    position: relative;
+    top: -12px;
+}
+.price__name {
+    font-family: dewi-bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    height: 34px;
+}
+
+.price__basket {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding-top: 15px;
+}
+.price__btn {
+    height: 62px;
+    padding: 0 25px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn__name {
+    font-family: dewi-bold;
+    margin-right: 18px;
+}
+.price__account {
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex: 1;
+}
+.circle {
+    border-radius: 50%;
+    padding-bottom: 6px;
+    border: 1px solid #eaeaea;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    display: -webkit-flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+.price__account_value {
+    font-family: dewi-bold;
+    margin: 0 18px;
+    font-size: 24px;
+}
+
+/* ABOUT */
+
+.about__text {
+    margin-bottom: 85px;
+    padding: 15px 10px;
+}
+.about__img {
+    width: 100%;
+    height: auto;
+}
+
+/* TOPIC */
+
+.topic__wrapper {
+    background-color: #1b1b1b;
+    height: 177px;
+}
+.topic {
+    padding: 30px 15px 0 15px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+}
+.topic__title {
+    font-family: dewi;
+    color: #fff;
+    font-size: 38px;
+}
+.topic__link {
+    cursor: pointer;
+    font-family: dewi-bold;
+    color: #85eb37;
+    font-size: 18px;
+}
+
+/* FOOTER CATALOG */
+
+.footer__catalog {
+    background-color: #02ec00;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.footer__catalog_btn {
+    font-family: dewi-bold;
+    cursor: pointer;
+    font-size: 18px;
+    width: 230px;
+    height: 62px;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER CONTACT */
+
+.footer__contact {
+    display: flex;
+    display: -webkit-flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.footer__contact_title {
+    font-family: dewi;
+    cursor: pointer;
+    font-size: 22px;
+}
+.footer__contact_elem {
+    font-family: dewi-bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 14px;
+    color: #85eb37;
+}
+
+/* FOOTER LINE */
+
+.footer__line {
+    background-color: #e1e1e1;
+    height: 2px;
+    margin-top: 37px;
+    margin-bottom: 25px;
+}
+
+/* FOOTER MENU */
+
+.footer__menu {
+margin-bottom: 30px;
+padding: 0 10px;
+}
+
+.footer__logo {
+    margin-right: 60px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.footer__list {
+    flex: 6;
+}
+
+.footer__list_item {
+    cursor: pointer;
+    font-family: dewi-bold;
+    font-size: 18px;
+    padding-right: 30px;
+}
+
+.footer__social {
+    justify-content: flex-end;
+    flex: 3;
+}
+
+.footer__social_item {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    margin-left: 10px;
+}
+.footer__number {
+    cursor: pointer;
+}
+
+
+
+/* FOOTER COPYWRITE */
+
+.footer__copywrite_wrapper {
+    background-color: #e8e8e8;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+display: flex;
+display: -webkit-flex;
+}
+.footer__copywrite {
+    font-size: 18px;
+    color: #7f7f7f;
+    padding: 0 10px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.footer__rights {
+    font-family: dewi-regular;
+    cursor: pointer;
+    font-size: 14px;
+}
+.footer__confid {
+    font-family: dewi-regular;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* RESPONSETIVE */
+
+@media (max-width: 1780px) {
+    .slider__more{
+        margin-top: 14%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .slider__title {
+        font-size: 40px;
+    }
+    .carousel-block {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1118px) {
+
+    .catalog__left {
+        display: block;
+        margin-right: 15px;
+    }
+    .catalog__right {
+        display: block;
+    }
+    .catalog__line_resp {
+        display: block;
+    }
+    .catalog__col_2 {
+        margin: 0;
+    }
+
+    .catalog__col_3 {
+        margin: 0;
+    }
+
+    .price {
+        grid-template-columns: 1fr 1fr
+    }
+    .price__account {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1194px) {
+    .slider__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .carousel-block {
+        left: 17%;
+    }
+}
+
+@media (max-width: 910px) {
+    .header__phone {
+        font-size: 16px;
+    }
+    .header__feedback {
+        font-size: 13px;
+    }
+
+
+    .slider__title {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .slider__more {
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+    .price {
+        grid-template-columns: 1fr
+    }
+    .price__wrapper {
+        display: flex;
+        display: -webkit-flex;
+    }
+    #advantages {
+        background: #02ec00;
+    }
+    .advantages {
+        flex-direction: column;
+    }
+    .advantages__item {
+        justify-content: flex-start;
+        padding: 10px 0;
+        width: 90%;
+    }
+
+    .popular__title {
+        font-size: 26px;
+    }
+
+    .footer__number {
+        padding: 0 2%;
+    }
+
+    .footer__contact_title {
+        font-size: 16px;
+    }
+    .footer__contact_elem {
+        font-size: 14px;
+    }
+
+    .footer__list {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        display: flex;
+        display: -webkit-flex;
+    }
+    
+    .header__top {
+        display: none;
+    }
+    .header__icon {
+        display: block;
+    }
+    .header__phone {
+        display: none;
+    }
+    .header__feedback {
+        display: none;
+    }
+    .header__basket {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 666px) {
+
+    .header__btn {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .catalog__item {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .advantages__title {
+        font-size: 22px;
+    }
+
+    .popular {
+        grid-template-columns: 1fr
+    }
+
+
+
+    .price__btn {
+        font-size: 18px;
+    }
+
+    .topic__title {
+        font-size: 30px;
+    }
+
+    .footer__catalog_btn {
+        width: 35%;
+    }
+
+    .footer__navigation {
+        margin: 5% 0;
+    }
+
+    .footer__number {
+        padding: 0;
+    }
+    .footer__contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 454px) {
+
+    .footer__menu {
+        padding: 0 5px;
+    }
+    .footer__social_item {
+        width: 27px;
+        height: 27px;
+    }
+    .footer__logo {
+        margin-right: 0;
+    }
+
+    .footer__copywrite {
+        flex-direction: column;
+    }
+
+    .footer__rights {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FONT-FACE */
+
+@font-face {
+     /* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)  */
+    font-family: "dewi"; 
+     /* адрес шрифта и тип  */
+    src: url("../fonts/RFDewi-Black.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+   font-family: "dewi-bold"; 
+   src: url("../fonts/RFDewi-Bold.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+}
+
+@font-face {
+    font-family: "dewi-semibold"; 
+    src: url("../fonts/RFDewi-Semibold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+ }
+
+ @font-face {
+    font-family: "dewi-regular"; 
+    src: url("../fonts/RFDewi-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+ }
+
+
